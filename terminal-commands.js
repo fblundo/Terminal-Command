@@ -1,5 +1,5 @@
 const fs = require('fs');
- 
+
 module.exports.ls = () => {
   fs.readdir('./', (err, files) => {
     const filesToString = files.reduce((acc, file) => {
@@ -25,3 +25,4 @@ module.exports.mkdir = (directory) => {
     console.log('Directory already exists');
   }
 };
+ 
